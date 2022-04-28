@@ -1,4 +1,4 @@
-# Bosch-SmartAuto
+# Bosch-Smart-Automation
 
 Este é um repositório contendo as atividades relacionadas ao curso de Smart Automation da Bosch.
 
