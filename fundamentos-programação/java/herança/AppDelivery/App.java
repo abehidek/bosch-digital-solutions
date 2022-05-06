@@ -9,7 +9,4 @@ public class App {
         System.out.println("Cadastrando restaurante...");
         this.restaurantes.add(restaurante);
     }
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
 }

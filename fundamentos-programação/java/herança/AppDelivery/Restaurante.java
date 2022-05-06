@@ -6,10 +6,12 @@ public class Restaurante {
     String nome;
     ArrayList<Lanche> cardapio = new ArrayList<>();
 
-    public Restaurante (String nome) {
+    // Construtor
+    public Restaurante(String nome) {
         this.nome = nome;
     }
 
+    // Métodos
     void adicionarLanche(Lanche lanche) {
         this.cardapio.add(lanche);
         lanche.restaurante = this;
@@ -42,6 +44,9 @@ public class Restaurante {
         Lanche lanche1 = new Lanche("Big Mac", 25);
 
         restaurante1.adicionarLanche(lanche1);
+
+        System.out.println(restaurante1.imprimirCardapio());
+
         restaurante1.adicionarLanche(new Lanche("Big Tasty", 20));
         restaurante1.adicionarLanche(new Lanche("Coca Cola 1L", 15));
         // System.out.println(restaurante1.cardapio.get(0).nome);
