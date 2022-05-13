@@ -1,0 +1,15 @@
+Breno:1234:ADM
+
+Pedro:23456:ADM
+
+Inacio:3333:USUARIO
+
+Maite:1234:USUARIO
+
+Clebinho123:123:ADM
+
+Miura:123:USUARIO
+
+Cleber:123:USUARIO
+
+Abe:123:USUARIO
