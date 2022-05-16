@@ -26,33 +26,11 @@ public class Restaurante {
         lanche.restaurante = null;
     }
 
-    ArrayList<ArrayList> imprimirCardapio() {
-        ArrayList<ArrayList> lanches = new ArrayList<>();
-        // ArrayList<String> lanches = new ArrayList<>();
+    void imprimirCardapio() {
+        ArrayList<String> lanches = new ArrayList<>();
         for (Lanche lanche : cardapio) {
-            ArrayList<Object> arrayLanche = new ArrayList<>();
-            arrayLanche.add(lanche.nome);
-            arrayLanche.add(lanche.preço);
-            lanches.add(arrayLanche);
+            lanches.add(lanche.nome);
         }
-        return lanches;
-    }
-
-    public static void main(String[] args) {
-        Restaurante restaurante1 = new Restaurante("McDonalds");
-
-        Lanche lanche1 = new Lanche("Big Mac", 25);
-
-        restaurante1.adicionarLanche(lanche1);
-
-        System.out.println(restaurante1.imprimirCardapio());
-
-        restaurante1.adicionarLanche(new Lanche("Big Tasty", 20));
-        restaurante1.adicionarLanche(new Lanche("Coca Cola 1L", 15));
-        // System.out.println(restaurante1.cardapio.get(0).nome);
-        System.out.println(restaurante1.imprimirCardapio());
-        // restaurante1.removerLanchePorIndex(0);
-        restaurante1.removerLanche(lanche1);
-        System.out.println(restaurante1.imprimirCardapio());
+        System.out.println(lanches);
     }
 }
