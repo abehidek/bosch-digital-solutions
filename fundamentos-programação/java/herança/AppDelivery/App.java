@@ -19,7 +19,6 @@ public class App {
     }
 
     public void cadastrarRestaurante(Restaurante restaurante) {
-        System.out.println("Tentando cadastrar restaurante...");
         this.restaurantes.add(restaurante);
     }
 
@@ -113,7 +112,7 @@ public class App {
                 if (restauranteIndex != -1) {
                     System.out.println("Digite o nome do pedido: ");
                     String nomePedido = input.nextLine();
-                    usuário.adicionarPedido(nomePedido, restaurantes.get(restauranteIndex));
+                    usuário.adicionarPedido(input, nomePedido, restaurantes.get(restauranteIndex));
                 }
             }
         }

@@ -1,6 +1,7 @@
 package herança.AppDelivery;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Usuário {
     String nome;
@@ -16,10 +17,15 @@ public class Usuário {
         this.CPF = CPF;
     }
 
-    public void adicionarPedido(String nome, Restaurante restaurante) {
+    public void adicionarPedido(Scanner input, String nome, Restaurante restaurante) {
         pedidos.add(new Pedido(nome, restaurante));
         while (true) {
-            System.out.println("");
+            System.out.println("Selecione o lanche: ");
+            restaurante.imprimirCardapio();
+            System.out.println("\nDeseja adicionar mais um lanche?: ");
+            String op = input.nextLine().toUpperCase();
+            if (op.startsWith("N"))
+                break;
         }
     }
 
