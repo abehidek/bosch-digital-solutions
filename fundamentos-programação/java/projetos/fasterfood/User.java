@@ -1,4 +1,4 @@
-package herança.fasterfood;
+package projetos.fasterfood;
 
 public class User {
     String name;

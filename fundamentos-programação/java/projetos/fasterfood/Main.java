@@ -1,4 +1,4 @@
-package herança.fasterfood;
+package projetos.fasterfood;
 
 import java.util.Scanner;
 
