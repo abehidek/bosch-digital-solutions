@@ -1,4 +1,5 @@
 package projetos.fasterfood;
+import projetos.fasterfood.views.*;
 
 import java.util.Scanner;
 
@@ -9,13 +10,19 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         App app = new App();
+        boolean program = true;
 
-        LoginScreen login = new LoginScreen();
-        login.authenticate(input, app.users);
-
-        if (!login.auth) { return; }
-        
-        MenuScreen menu = new MenuScreen();
-        menu.menu();
+        while (program) {
+            LoginScreen login = new LoginScreen();
+            login.menu(input, app);
+            if (login.auth) { 
+                MenuScreen menu = new MenuScreen();
+                boolean menuLogOut = menu.menu(input, app);
+                if (menuLogOut) {
+                    app.currentUser = new User();
+                    program = menuLogOut;
+                }
+            }
+        }
     }
 }
