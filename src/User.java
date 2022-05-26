@@ -6,9 +6,9 @@ public class User {
     private boolean isAdmin;
 
     public User(String name, String password, boolean isAdmin) {
-        this.setName(name);
-        this.password = password;
-        this.isAdmin = isAdmin;
+      this.setName(name);
+      this.password = password;
+      this.isAdmin = isAdmin;
     }
 
     public User() {
@@ -17,11 +17,8 @@ public class User {
       this.isAdmin = false;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getPassword() { return password; }
+    public boolean getIsAdmin() { return isAdmin; }
 }
