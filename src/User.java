@@ -1,3 +1,5 @@
+package src;
+
 public class User {
     private String name;
     private String password;
@@ -7,6 +9,12 @@ public class User {
         this.setName(name);
         this.password = password;
         this.isAdmin = isAdmin;
+    }
+
+    public User() {
+      this.setName("");
+      this.password = "";
+      this.isAdmin = false;
     }
 
     public String getName() {

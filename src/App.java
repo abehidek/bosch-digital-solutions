@@ -1,8 +1,10 @@
+package src;
+
 import java.util.ArrayList;
 
 public class App {
     private ArrayList<User> listUsers = new ArrayList<>();
-    private User currentUser;
+    private User currentUser = new User();
 
     public void addUser(String name, String password) {
         for (User user:listUsers) {
