@@ -7,6 +7,12 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("> Init");
     App app = new App();
+    // Init setup just for testing purposes
+    app.addUser("abe", "123", true);
+    app.addUser("miura", "123", true);
+    app.addRestaurant("mcdonalds");
+    app.addRestaurant("burgerking");
+
     Scanner input = new Scanner(System.in);
     while (true) {
       LoginMenu.menu(app, input);
