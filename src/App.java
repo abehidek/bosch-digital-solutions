@@ -6,6 +6,7 @@ public class App {
   private ArrayList<User> listUsers = new ArrayList<>();
   private User currentUser = new User();
   public boolean isLogged = false;
+  public ArrayList<Restaurant> listRestaurants = new ArrayList<>();
 
   public void addUser(String name, String password, boolean isAdmin) {
     for (User user:listUsers) {
@@ -35,4 +36,16 @@ public class App {
   }
 
   public User getCurrentUser() { return currentUser; }
+
+  public void getRestaurants() {
+    ArrayList<String> listRestaurantsName = new ArrayList<>();
+    for (Restaurant restaurant:listRestaurants) {
+      listRestaurantsName.add(restaurant.name);
+    }
+    System.out.println(listRestaurantsName);
+  }
+
+  public void addRestaurant(String name) {
+    listRestaurants.add(new Restaurant(name));
+  }
 }
