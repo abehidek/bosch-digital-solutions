@@ -5,7 +5,7 @@ import src.*;
 
 public class LoginMenu {
   public static void menu(App app, Scanner input) {
-    System.out.println(">> LoginMenu");
+    // System.out.println(">> LoginMenu");
     boolean menu = true;
 
     while (menu) {
