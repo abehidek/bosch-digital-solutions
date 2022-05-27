@@ -11,6 +11,8 @@ public class Restaurant {
     this.name = name;
   }
 
+  public String getName() { return name; }
+
   public void addItem(Item item) { this.itemMenu.add(item); }
   public void removeItem(int itemIndex) { this.itemMenu.remove(itemIndex); }
   public void getItemMenu() {

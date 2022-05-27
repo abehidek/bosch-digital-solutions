@@ -7,6 +7,7 @@ public class App {
   private User currentUser = new User();
   public boolean isLogged = false;
   public ArrayList<Restaurant> listRestaurants = new ArrayList<>();
+  private Restaurant currentRestaurant;
 
   public void addUser(String name, String password, boolean isAdmin) {
     for (User user:listUsers) {
@@ -36,6 +37,11 @@ public class App {
   }
 
   public User getCurrentUser() { return currentUser; }
+  public Restaurant getCurrentRestaurant() { return currentRestaurant; }
+  public void getRestaurant(int restaurantIndex) {
+    currentRestaurant = listRestaurants.get(restaurantIndex);
+    // return listRestaurants.get(restaurantIndex);
+  }
 
   public void getRestaurants() {
     ArrayList<String> listRestaurantsName = new ArrayList<>();
@@ -45,7 +51,9 @@ public class App {
     System.out.println(listRestaurantsName);
   }
 
-  public void addRestaurant(String name) {
-    listRestaurants.add(new Restaurant(name));
+  public void addRestaurant(String name) { listRestaurants.add(new Restaurant(name)); }
+  public void removeRestaurant(int restaurantIndex) {
+    if (restaurantIndex < 0 || restaurantIndex > listRestaurants.size()) { Error.printError("> Invalid index"); return; }
+    listRestaurants.remove(restaurantIndex); 
   }
 }
