@@ -16,6 +16,17 @@ public class Menu {
     return Integer.parseInt(index);
   }
 
+  public static int getItemIndex(App app, Scanner input) {
+    int i = 0;
+    for (Item item:app.getCurrentRestaurant().itemMenu) {
+      System.out.println("Index: "+i+" Name: "+ item.name);
+      i++;
+    }
+    System.out.println("Which restaurant do you select? : ");
+    String index = input.nextLine();
+    return Integer.parseInt(index);
+  }
+
   public static void restaurantMenu(App app, Scanner input) {
     boolean menu = true;
     int restaurantIndex = getRestaurantIndex(app, input);
@@ -26,7 +37,7 @@ public class Menu {
       // System.out.println("> Welcome to restaurant "+ restaurant.getName() +" options!");
       System.out.println("> Welcome to restaurant "+ app.getCurrentRestaurant().getName() +" options!");
 
-      System.out.println("\nWhat would you like to do?:\n 0 -> exit\n 1 -> Option 1");
+      System.out.println("\nWhat would you like to do?:\n 0 -> exit\n 1 -> List item menu\n 2 -> Add item\n 3 -> Remove item");
       String userinput = input.nextLine();
       if (userinput.isEmpty()) { System.out.println("> Type something!"); continue; }
       char option = userinput.charAt(0);
@@ -36,11 +47,29 @@ public class Menu {
           menu = false;
           break;
         case '1':
-          System.out.println("> Option 1");
+          System.out.println("> Listing Item menu...");
+          app.getCurrentRestaurant().getItemMenu();
+          break;
+        case '2':
+          System.out.println("> Adding new item to menu...");
+          try {
+            System.out.println("Type the name of the item: ");
+            String itemName = input.nextLine();
+            System.out.println("Type the price of the item "+itemName);
+            double itemPrice = Double.parseDouble(input.nextLine());
+            app.getCurrentRestaurant().addItem(new Item(itemName, itemPrice));
+          } catch (Exception e) {
+            System.out.println(e);
+          } break;
+        case '3':
+          System.out.println("> Removing item from menu...");
+          int index = getItemIndex(app, input);
+          app.getCurrentRestaurant().removeItem(index);
           break;
       }
     }
   }
+  
   public static void menu(App app, Scanner input) {
     // System.out.println(">> MainMenu");
     boolean menu = true;

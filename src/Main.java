@@ -9,7 +9,7 @@ public class Main {
     App app = new App();
     // Init setup just for testing purposes
     app.addUser("abe", "123", true);
-    app.addUser("miura", "123", true);
+    app.addUser("test", "123", true);
     app.addRestaurant("mcdonalds");
     app.addRestaurant("burgerking");
 
