@@ -54,6 +54,16 @@ public class App {
   }
 
   public void addRestaurant(String name) { listRestaurants.add(new Restaurant(name)); }
+
+  // Just for testing
+  public void addRestaurant(String name, boolean testing) {
+    Restaurant test = new Restaurant(name);
+    test.addItem(new Item("Big Mac", 30.5));
+    test.addItem(new Item("Big Tasty", 20));
+    test.addItem(new Item("Mc Lanche Feliz", 15));
+    listRestaurants.add(test); 
+  }
+
   public void removeRestaurant(int restaurantIndex) {
     if (restaurantIndex < 0 || restaurantIndex > listRestaurants.size()) { Error.printError("> Invalid index"); return; }
     listRestaurants.remove(restaurantIndex); 

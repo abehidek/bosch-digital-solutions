@@ -10,7 +10,7 @@ public class Main {
     // Init setup just for testing purposes
     app.addUser("abe", "123", true);
     app.addUser("test", "123", true);
-    app.addRestaurant("mcdonalds");
+    app.addRestaurant("mcdonalds", true);
     app.addRestaurant("burgerking");
 
     Scanner input = new Scanner(System.in);
