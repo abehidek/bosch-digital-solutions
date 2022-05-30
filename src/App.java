@@ -37,7 +37,9 @@ public class App {
   }
 
   public User getCurrentUser() { return currentUser; }
+
   public Restaurant getCurrentRestaurant() { return currentRestaurant; }
+
   public void getRestaurant(int restaurantIndex) {
     currentRestaurant = listRestaurants.get(restaurantIndex);
     // return listRestaurants.get(restaurantIndex);
