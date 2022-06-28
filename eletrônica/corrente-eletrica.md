@@ -1,8 +1,8 @@
 ---
+author: Abe Hidek
 sources: {
     https://mundoeducacao.uol.com.br/fisica/corrente-eletrica.htm
 }
-
 ---
 
 # Corrente elétrica
@@ -56,14 +56,22 @@ A passagem de corrente elétrica em materiais podem causar diversos efeitos de a
 
 O efeito térmico decorre de quando a corrente elétrica encontra alguma resistência a sua passagem, e isso ocasiona no seu aquecimento, em razão do efeito Joule.
 
-já o efeito magnético acontece devido ao movimento das cargas, e é mais intenso em materiais condutores, alguns exemplos 
+já o efeito magnético acontece devido ao movimento das cargas, e é mais intenso em materiais condutores, alguns exemplos são bobinas usadas em indutores
 
-##### Explicação por video
-
-- Veritasium video https://www.youtube.com/watch?v=bHIhgxav9LY
+O efeito luminoso ocorre quando um material condutor sofre aquecimento, e dessa forma, passe a emitir luz, como é o caso das lâmpadas incandescentes.
 
 #### Curiosidade
 
-Nikola Tesla x Thomas Edison
+##### Nikola Tesla x Thomas Edison
 
-Velocidade da correte elétrica
+- Rivalidade entre as patentes de corrente contínua e alternada.
+- Espaço no mercado de eletricidade da época
+
+##### Velocidade da corrente elétrica:
+
+Os elétrons presentes no fio se movem na velocidade da luz em todas as direções, no entanto, como existe uma diferença entre potencial, existe uma velocidade de deriva (velocidade média), que move a média dos elétrons presentes no fio.
+
+A média dos elétrons que estão dentro do fio se movem a velocidades muito baixas (aproximadamente 0.1 mm/s) em direção ao sentido da corrente, porém o campo elétrico formado por essas cargas presentes no fio se movem a velocidade da luz, e dessa forma a energia chega quase instantânea.
+
+##### A energia não flui dentro do fio
+- Veritasium video https://www.youtube.com/watch?v=bHIhgxav9LY
