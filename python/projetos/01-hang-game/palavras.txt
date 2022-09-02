@@ -1,4 +1,0 @@
-banana:fruta;
-salario:o que se ganha;
-livro:conhecimento;
-lixeira:descarte
