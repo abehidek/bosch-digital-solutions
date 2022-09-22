@@ -1,15 +1,18 @@
-import java.sql.Statement;
 import java.util.ArrayList;
+
+import dao.AlunoService;
+import dao.Database;
+
 import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
-        DAO dao = new DAO();
+        Database dao = new Database();
         Connection connection = dao.connect();
-        // dao.insert(connection);
-        ArrayList<models.User> users = dao.select(connection);
+        // AlunoService.createAluno(connection);
+        ArrayList<models.AlunoModel> alunos = AlunoService.allUsers(connection);
 
-        users.get(0).print();
+        alunos.get(0).print();
     }
 }
