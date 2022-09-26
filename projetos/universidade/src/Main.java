@@ -11,7 +11,7 @@ public class Main {
         Database dao = new Database();
         Connection connection = dao.connect();
         // AlunoService.createAluno(connection);
-        ArrayList<models.AlunoModel> alunos = AlunoService.allUsers(connection);
+        ArrayList<models.AlunoModel> alunos = AlunoService.allAlunos(connection);
 
         alunos.get(0).print();
     }

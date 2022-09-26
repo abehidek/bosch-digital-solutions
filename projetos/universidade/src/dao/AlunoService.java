@@ -13,7 +13,7 @@ public class AlunoService {
         connection.createStatement().executeUpdate("INSERT INTO aluno (nome, idade, profissao_id) VALUES ('nobre', 24, 2)");
     }
 
-    public static ArrayList<AlunoModel> allUsers(Connection connection) throws SQLException {
+    public static ArrayList<AlunoModel> allAlunos(Connection connection) throws SQLException {
         ArrayList<ProfissaoModel> profissoes = ProfissaoService.allProfissao(connection);
 
         ResultSet ac = connection.createStatement().executeQuery("SELECT * from aluno");
