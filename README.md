@@ -1,6 +1,6 @@
-# Bosch-Smart-Automation
+# Bosch Digital Solutions
 
-Este é um repositório contendo as atividades relacionadas ao curso de Smart Automation da Bosch.
+Este é um repositório contendo as atividades relacionadas ao curso de Digital Solutions da Bosch.
 
 Se é a primeira vez em contato com o Git e Github, recomendo assistir os vídeos do "Curso em vídeo" onde lá é explicado de forma muito concisa como funciona tudo para você estar situado.
 
